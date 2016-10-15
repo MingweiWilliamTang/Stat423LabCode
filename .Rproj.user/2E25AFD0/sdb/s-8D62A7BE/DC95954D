@@ -1,0 +1,17 @@
+{
+    "contents" : "tb1 = read.table(\"C:/Users/Mingwei/Downloads/measure_hierarchy_8Jmap_matrix.csv\",sep=\",\")\n\napply(tb1,2,mean)\n\ntb2 = read.table(\"C:/Users/Mingwei/Downloads/time_measure_8Rnomap_matrix.csv\",sep = \",\")\n\napply(tb2,2,mean)\n",
+    "created" : 1453330026683.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "3275905966",
+    "id" : "DC95954D",
+    "lastKnownWriteTime" : 175086640,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

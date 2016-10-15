@@ -1,0 +1,16 @@
+{
+    "contents" : "---\ntitle: \"Stat 423 Lab1\"\nauthor: \"Mingwei Tang\"\ndate: \"January 1, 2015\"\noutput: pdf_document\n---\n# An example by R Markdown\nThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.\n\nWhen you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\n\n## A chunck contains your code\n\nThe basic block of code is called __chunk__, the code in the Chunk will be evaluated and printed\n```{r simple}\nsummary(cars)\n```\n\n## Embeds plots\nYou can also embed plots, for example:\n\n```{r Embeds, echo=FALSE,fig.height=4,fig.width=4}\nplot(cars)\n```\n\nNote that the `echo = FALSE` parameter was added to the code chunk to **prevent** printing of the R code that generated the plot. `fig.height=4` and `fig.width=4`. Controls the height of your figure. \n\n## manipulates the results \nSomes times you don't to want to display your result\n\n`results=\"hide\"` to hide the results/output (but here the code would still be displayed).\n\n```{r display1,results='hide'}\ncars.lm = lm(dist~speed,data=cars)\ncars.lm\n```\n\n```{r disply2,include=FALSE}\ncars.lm2=lm(speed~dist^2,data=cars)\ncars.lm2\n```\n`include=FALSE` to have the chunk evaluated, but neither the code nor its output displayed.\n\n```{r last}\nsummary(cars.lm2)\n```\n\n### add latex equations\nBivariate samples $(X_1,Y_1),\\ldots,(X_n,Y_n)$, the sample covariace for $X,Y$ is defined as \n$$\\dfrac{1}{n-1}\\sum_{i=1}^n (X_i-\\bar{X})(Y_i-\\bar{Y})$$\n\n\n\n",
+    "created" : 1452122140963.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3816931757",
+    "id" : "4D5E9CD3",
+    "lastKnownWriteTime" : 1452124265,
+    "path" : "~/Dropbox/423/lab1.Rmd",
+    "project_path" : null,
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_markdown"
+}

@@ -1,0 +1,64 @@
+---
+title: "Stat 423 Lab1"
+author: "Mingwei Tang"
+date: "January 1, 2015"
+output: pdf_document
+---
+# An example by R Markdown
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+
+## A chunck contains your code
+
+The basic block of code is called __chunk__, the code in the Chunk will be evaluated and printed
+```{r simple}
+summary(cars)
+```
+
+```{r second}
+1+1
+```
+
+
+## Embeds plots
+You can also embed plots, for example:
+
+```{r Embeds, echo=FALSE,fig.height=4,fig.width=4}
+plot(cars)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to **prevent** printing of the R code that generated the plot. `fig.height=4` and `fig.width=4`. Controls the height of your figure. 
+
+## manipulates the results 
+Somes times you don't to want to display your result
+
+`results="hide"` to hide the results/output (but here the code would still be displayed).
+
+```{r display1,results='hide'}
+cars.lm = lm(dist~speed,data=cars)
+cars.lm
+```
+`include=FALSE` to have the chunk evaluated, but neither the code nor its output displayed.
+```{r disply2,include=FALSE}
+cars.lm2=lm(speed~dist^2,data=cars)
+cars.lm2
+```
+
+
+```{r last}
+summary(cars.lm2)
+```
+
+### add latex equations
+Bivariate samples $(X_1,Y_1),\ldots,(X_n,Y_n)$, the sample covariace for $X,Y$ is defined as 
+$$\dfrac{1}{n-1}\sum_{i=1}^n (X_i-\bar{X})(Y_i-\bar{Y})$$
+
+
+
+
+
+
+
+
